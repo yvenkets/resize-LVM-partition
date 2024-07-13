@@ -1,0 +1,1 @@
+# resize-LVM-partition
