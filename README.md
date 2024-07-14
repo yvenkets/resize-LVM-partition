@@ -24,11 +24,14 @@ Use parted to resize the partition:
 
 Inside the parted prompt:
 
-```(parted) print
-(parted) resizepart 2 100%
-(parted) quit```
+```(parted) print```
 
-Resize the Physical Volume
+```(parted) resizepart 2 100%```
+
+```(parted) quit```
+
+#Resize the Physical Volume
+
 Resize the physical volume:
 
 ```sudo pvresize /dev/vda2```
@@ -37,7 +40,7 @@ Extend the logical volume:
 
 ```sudo lvextend -l +100%FREE /dev/centos/root```
 
-Resize the filesystem:
+# Resize the filesystem:
 If your filesystem is xfs:
 ```sudo xfs_growfs /```
 
